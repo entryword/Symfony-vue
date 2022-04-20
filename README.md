@@ -4,15 +4,15 @@ Source: https://zetcode.com/symfony/vue/
 
 ## Building assets
 We need to build the assets.
-
+$`npm install`
 $`npm run dev`
 
 The assets are built with npm run dev command for the development environment.
 
 ## Running the application
 We start the development server and locate to the application page.
-
-$`symfony serve`
+(need to copy symfony.exe to the project folder)
+$`./symfony serve`
 
 We start the development server. Then we locate to the localhost:8000/home page.
 
