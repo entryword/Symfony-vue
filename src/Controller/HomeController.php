@@ -8,14 +8,14 @@ use Symfony\Component\Routing\Annotation\Route;
 class HomeController extends AbstractController
 {
     /**
-     * @Route("/home", name="home")
+     * @Route("/", name="home")
      */
     public function index()
     {
         $words = ['sky', 'cloud', 'wood', 'rock', 'forest',
             'mountain', 'breeze'];
 
-        return $this->render('home/index.html.twig', [
+        return $this->render('/index.html.twig', [
             'words' => $words
         ]);
     }

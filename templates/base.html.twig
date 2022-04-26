@@ -9,10 +9,13 @@
     </head>
     <body>
 
-        {% block body %}{% endblock %}
+         <div id="app">
+            <app></app>
+        </div>
 
         {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
         {% endblock %}
+       
     </body>
 </html>
