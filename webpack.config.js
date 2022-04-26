@@ -4,7 +4,7 @@ Encore
     .setOutputPath('public/build/')
     .setPublicPath('/build')
 
-    .enableVueLoader()
+    .enableVueLoader() // here is where we can use Vue in Symfony
 
     .addEntry('app', './assets/js/app.js')
 
