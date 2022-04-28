@@ -1,4 +1,5 @@
 var Encore = require('@symfony/webpack-encore');
+var Webpack = require('webpack');
 
 Encore
     .setOutputPath('public/build/')
@@ -16,7 +17,10 @@ Encore
     .enableBuildNotifications()
     .enableSourceMaps(!Encore.isProduction())
     .enableVersioning(Encore.isProduction())
-
+    .addPlugin(new Webpack.DefinePlugin({
+        __VUE_OPTIONS_API__: true,
+        __VUE_PROD_DEVTOOLS__: true,
+    }))
 ;
 
 module.exports = Encore.getWebpackConfig();

@@ -16,9 +16,11 @@
         "build": "encore production --progress"
     },
     "dependencies": {
+        "ant-design-vue": "^3.2.2",
         "vue": "^3.2.33",
         "vue-loader": "^17.0.0",
         "vue-router": "^4.0.13",
-        "vue-template-compiler": "^2.6.14"
+        "vue-template-compiler": "^2.6.14",
+        "webpack": "^5.72.0"
     }
 }
