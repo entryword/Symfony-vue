@@ -1,11 +1,9 @@
+<script setup>
+</script>
 <template>
-  <div>
-    <h2 class="center">My Application test</h2>
-    <div v-text="message"></div>
-    {{ message }}
-    <ul>
-      <li :key="word.id" v-for="word in words">{{ word }}</li>
-    </ul>
+  <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
   </div>
 </template>
 
